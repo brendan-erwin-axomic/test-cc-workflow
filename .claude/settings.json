@@ -1,0 +1,13 @@
+{
+  "enabledPlugins": {
+    "cc-workflow@brendan-erwin-axomic": true
+  },
+  "permissions": {
+    "allow": [
+      "Bash(devbox run *)"
+    ],
+    "deny": [
+      "Bash(devbox run -- *)"
+    ]
+  }
+}

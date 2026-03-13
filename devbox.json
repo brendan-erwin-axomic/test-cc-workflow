@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.14.0/.schema/devbox.schema.json",
+  "packages": [],
+  "shell": {
+    "init_hook": [
+      "${CLAUDE_PLUGIN_ROOT}/bin/ccw init || true"
+    ],
+    "scripts": {
+      "ccw-refresh-config": "${CLAUDE_PLUGIN_ROOT}/bin/ccw refresh",
+      "pr:check": "${CLAUDE_PLUGIN_ROOT}/bin/ccw pr check \"$@\"",
+      "pr:create": "${CLAUDE_PLUGIN_ROOT}/bin/ccw pr create \"$@\"",
+      "pr:list": "${CLAUDE_PLUGIN_ROOT}/bin/ccw pr list",
+      "pr:merge": "${CLAUDE_PLUGIN_ROOT}/bin/ccw pr merge \"$@\"",
+      "pr:ready": "${CLAUDE_PLUGIN_ROOT}/bin/ccw pr ready \"$@\"",
+      "text:slugify": "${CLAUDE_PLUGIN_ROOT}/bin/ccw text slugify \"$@\"",
+      "text:token": "${CLAUDE_PLUGIN_ROOT}/bin/ccw text token \"$@\"",
+      "work:container": "${CLAUDE_PLUGIN_ROOT}/bin/ccw work container \"$@\"",
+      "work:container:close": "${CLAUDE_PLUGIN_ROOT}/bin/ccw work container:close \"$@\"",
+      "work:container:create": "${CLAUDE_PLUGIN_ROOT}/bin/ccw work container:create \"$@\"",
+      "work:containers": "${CLAUDE_PLUGIN_ROOT}/bin/ccw work containers",
+      "work:item": "${CLAUDE_PLUGIN_ROOT}/bin/ccw work item \"$@\"",
+      "work:item:close": "${CLAUDE_PLUGIN_ROOT}/bin/ccw work item:close \"$@\"",
+      "work:item:create": "${CLAUDE_PLUGIN_ROOT}/bin/ccw work item:create \"$@\"",
+      "work:items": "${CLAUDE_PLUGIN_ROOT}/bin/ccw work items \"$@\"",
+      "work:items:docs": "${CLAUDE_PLUGIN_ROOT}/bin/ccw work items:docs \"$@\"",
+      "work:label:create": "${CLAUDE_PLUGIN_ROOT}/bin/ccw work label:create \"$@\""
+    }
+  }
+}
